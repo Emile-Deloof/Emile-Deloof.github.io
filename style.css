@@ -1,0 +1,257 @@
+*{
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    color: black;
+}
+
+#HeaderWrapper{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+nav{
+    flex: 1;
+    animation: NavTransitionIn 1.5s;
+    padding-top: 8px;
+    background-color: #364C63;
+    margin: 0;
+    padding-left: 45%;
+    padding-right: 40px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li{
+    text-align: right;
+    flex: 1;
+}
+
+#MainHeader{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    background-color: #364C63;
+    overflow: hidden;
+}
+
+#logo{
+    max-width: 165px;
+    flex: 1;
+    cursor: pointer;
+}
+
+main{
+    margin: 10vh 20% 0 20%;
+}
+
+#Name{
+    text-align: center;
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }   
+}
+
+@keyframes NavTransitionIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#Picture{
+    animation: pictureIn 1.5s;
+    width: 100%;
+}
+
+@keyframes pictureIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#Header{
+    height: 82vh;
+}
+
+.MainThings{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.MainThings h1{
+    min-width: 100%;
+    text-align: center;
+}
+
+.MainThings p{
+    margin: 0 5% 0 5%;
+    text-align: center;
+    min-width: 100%;
+}
+
+.MainThings a{
+    color: black;
+}
+
+#Contactbtn{
+    font-size: 18px;
+    background-color: transparent;
+    transition: 0.3s all ease;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    text-decoration: underline;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+#Contactbtn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+#ToTop{
+    top: 50%;
+    position: fixed;
+    color: white;
+    background-color: #364C63;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-left: 15px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd}
+  
+.show {display:block;}
+
+.dropbtn{
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.share{
+    animation: pictureIn 1.3s;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#project1 img{
+    max-width: 380px;
+}
+
+#home{
+    display: none;
+}
+
+@media screen and (max-width: 1024px)
+{
+    nav{
+        padding-left: 0;
+    }
+    nav li{
+        text-align: center;
+    }
+    .share{
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+    #home{
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    nav ul{
+        padding-bottom: 8px;
+    }
+    main{
+        margin: 10vh 5px 0 5px;
+    }
+    .container{
+        overflow: none;
+    }
+    #mainHeader{
+        overflow: hidden;
+    }
+}
+
+#scrollPic{
+    max-width: 90px;
+    cursor: pointer;
+}
+
+#scroll{
+    text-align: center;
+    width: 100%;
+}
