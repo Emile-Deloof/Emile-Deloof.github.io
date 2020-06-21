@@ -41,10 +41,12 @@
                         </script>
                         <script async src="https://static.addtoany.com/menu/page.js"></script>
                     </div>
-                    <h1 id="Name">Emile Deloof</h1>
-                    <img src="Best-Code-and-Text-Editors.png" alt="Picture" id="Picture">
+                    <div id="introduction">
+                        <h1 id="Name">Emile Deloof</h1>
+                        <img src="Best-Code-and-Text-Editors.png" alt="Picture" id="Picture">
+                    </div>
                 </header>
-                <!--<a href="#About" id="scroll"><img src="/scroll-down-icon-png-6.png" alt="scroll" id="scrollPic"></a>-->
+                <a href="#About" id="scroll"><img src="/scroll-down-icon-png-6.png" alt="scroll" id="scrollPic"></a>
                 <div class="container">
                     <div id="About" class="MainThings" data-aos="fade-up">
                         <h1>About Me</h1>
@@ -54,14 +56,16 @@
                         <!--<h2>What I Made</h2>
                         <div class="grid">
                             <div id="project1" class="projects gridElement">
-                                <a href="http://admin.creatief.be/emile">
+                                <a href="http://admin.creatief.be/emile" target="_blank">
                                     <img src="/pcScreenFrans.png" alt="WebsiteFrans" name="WebsiteFrans">
                                 </a>
+                                <br><label for="WebsiteFrans">This is a website that i made for my teacher French.</label>
                             </div>
                             <div id="project2" class="projects gridElement">
-                                <a href="http://www.sevenks.be">
+                                <a href="http://www.sevenks.be" target="_blank">
                                     <img src="/sevenksPhone.png" alt="Sevenks" name="sevenks">
                                 </a>
+                                <br><label for="sevenks">This is a website that i made for my aunt her business.</label>
                             </div>
                         </div>-->
                         <h1>What i made</h1>
@@ -99,6 +103,29 @@
               offset: 400,
               duration: 1000
           });
+        </script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAfmqR4KFztHlFsXX5L6kEP9lBg-BEwRU4",
+            authDomain: "portfolio-8b21d.firebaseapp.com",
+            databaseURL: "https://portfolio-8b21d.firebaseio.com",
+            projectId: "portfolio-8b21d",
+            storageBucket: "portfolio-8b21d.appspot.com",
+            messagingSenderId: "257046177015",
+            appId: "1:257046177015:web:5adad54f1b74383c361ff2",
+            measurementId: "G-1FYBBWM126"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
         </script>
     </body>
 </html>
